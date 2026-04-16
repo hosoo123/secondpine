@@ -19,7 +19,7 @@ body {
 }
 
 #HeroImage {
-  background-image: url(/secondpine/pictures/HeroImage.png);
+  background-image: url(/pictures/HeroImage.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 773px;
@@ -101,7 +101,7 @@ header {
 #journeys {
   height: 500px;
   width: 1440px;
-  background-image: url(/secondpine/pictures/Location.png);
+  background-image: url(/pictures/Location.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -141,7 +141,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 1022px;
-  background-image: url(/secondpine/pictures/Roadmap\ image.png);
+  background-image: url(/pictures/Roadmap\ image.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,7 +362,7 @@ header {
 #pricing {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/secondpine/pictures/Price&Footer\ image.png);
+  background-image: url(/pictures/Price&Footer\ image.png);
   width: 1440px;
   height: 1120px;
   display: flex;
