@@ -10,6 +10,7 @@ body {
   margin: 0 auto;
   padding: 0;
   display: block;
+  background: linear-gradient(180deg, #83b5d3 0%, #d7e4eb 49.04%);
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 }
 
 #HeroImage {
-  background-image: url(/pictures/HeroImage.png);
+  background-image: url(/secondpine/pictures/HeroImage.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 773px;
@@ -37,7 +38,6 @@ header {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 .navtext {
   font-size: 18px;
@@ -67,7 +67,6 @@ header {
 }
 .heroTextContainer {
   display: flex;
-  border: 1px solid red;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -99,12 +98,10 @@ header {
   padding: 0;
   font-family: "Hanuman";
 }
-
 #journeys {
-  border: 1px solid red;
   height: 500px;
   width: 1440px;
-  background-image: url(/pictures/Location.png);
+  background-image: url(/secondpine/pictures/Location.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -112,9 +109,7 @@ header {
   align-items: center;
   column-gap: 40px;
 }
-
 .journey {
-  border: 1px solid green;
   text-align: center;
   font-family:
     Bebas Neue,
@@ -143,11 +138,10 @@ header {
   filter: brightness(0.8);
 }
 #destinations {
-  border: 1px solid red;
   background-size: cover;
   background-repeat: no-repeat;
   height: 1022px;
-  background-image: url(/pictures/Roadmap\ image.png);
+  background-image: url(/secondpine/pictures/Roadmap\ image.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,7 +149,6 @@ header {
   position: relative;
 }
 .destination {
-  border: 1px solid green;
   height: 204px;
   display: flex;
   flex-direction: column;
@@ -180,20 +173,19 @@ header {
 .map {
   width: 1200px;
   height: 640px;
-  border: 1px solid red;
-
   gap: 40px;
 }
 .mapLeft {
   width: 513px;
   height: 100%;
-  border: 1px solid green;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
+.mapLeftContain:hover {
+  border: white solid 4px;
+}
 .mapLeftContain {
-  border: 1px solid purple;
   width: 513px;
   height: 112px;
   border-radius: 9999px;
@@ -204,14 +196,36 @@ header {
 .sukhbaatar {
   display: flex;
   justify-content: space-between;
-  border: 1px solid lime;
+  width: 483px;
+  height: 48px;
+  align-items: center;
+  padding-left: 30px;
+}
+.amarbays {
+  display: flex;
+  justify-content: space-between;
+  width: 483px;
+  height: 48px;
+  align-items: center;
+  padding-left: 30px;
+}
+.khorg {
+  display: flex;
+  justify-content: space-between;
+  width: 483px;
+  height: 48px;
+  align-items: center;
+  padding-left: 30px;
+}
+.khuvs {
+  display: flex;
+  justify-content: space-between;
   width: 483px;
   height: 48px;
   align-items: center;
   padding-left: 30px;
 }
 .sukhbaatarBorder1 {
-  border: 1px solid pink;
   width: 217px;
   height: 48px;
   left: 30px;
@@ -220,7 +234,6 @@ header {
   font-family: "Inter";
 }
 .locationDetail {
-  border: 1px solid plum;
   width: 94px;
   height: 15px;
   font-weight: 400;
@@ -251,7 +264,6 @@ header {
   font-size: 14px;
 }
 .Amarbaysgalant {
-  border: 1px solid pink;
   width: 316px;
   height: 48px;
   left: 30px;
@@ -260,7 +272,6 @@ header {
   font-family: "Inter";
 }
 .Terkh {
-  border: 1px solid pink;
   width: 243px;
   height: 48px;
   left: 30px;
@@ -268,22 +279,19 @@ header {
   font-size: 24px;
   font-family: "Inter";
 }
-.mapRight {
-  border: 1px solid red;
-  width: 647px;
-  height: 640px;
-  z-index: 100;
-}
-.mapRightContain {
-  border: 1px solid red;
-  width: 647px;
-  height: 100%;
+.Terkhiin {
+  display: flex;
+  justify-content: space-between;
+  width: 483px;
+  height: 48px;
+  align-items: center;
+  padding-left: 30px;
 }
 .place-pin {
   width: 34px;
   height: 34px;
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
 }
 .sukhbaatar-position {
   top: 450px;
@@ -304,4 +312,265 @@ header {
 .khuvsgul-position {
   top: 230px;
   left: 749px;
+}
+.zurag-pin {
+  width: 245px;
+  height: 245px;
+  position: absolute;
+  z-index: 1000;
+}
+.img1 {
+  display: none;
+  top: 329px;
+  left: 1032px;
+}
+.img2 {
+  display: none;
+  top: 218px;
+  left: 836px;
+}
+.img3 {
+  display: none;
+  top: 346px;
+  left: 703px;
+}
+.img4 {
+  display: none;
+  top: 180px;
+  left: 652px;
+}
+.img5 {
+  display: none;
+  top: 184px;
+  left: 819px;
+}
+.map:has(.sukhbaatar:hover) .img1 {
+  display: block;
+}
+.map:has(.amarbays:hover) .img2 {
+  display: block;
+}
+.map:has(.khorg:hover) .img3 {
+  display: block;
+}
+.map:has(.Terkhiin:hover) .img4 {
+  display: block;
+}
+.map:has(.khuvs:hover) .img5 {
+  display: block;
+}
+#pricing {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/secondpine/pictures/Price&Footer\ image.png);
+  width: 1440px;
+  height: 1120px;
+  display: flex;
+  align-items: center;
+  top: 204px;
+  left: 120px;
+  flex-direction: column;
+}
+.titleContainer {
+  height: 85px;
+  width: 1440px;
+  align-content: center;
+}
+.title1 {
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-weight: 600;
+  font-size: 42px;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 1);
+}
+.title2 {
+  height: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: rgba(24, 24, 27, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.cardContainer {
+  width: 1200px;
+  height: 527px;
+  column-gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 79px;
+}
+.packageCard {
+  width: 384px;
+  height: 527px;
+  border-radius: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.packCard1 {
+  width: 384px;
+  height: 92px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+.heartIcon {
+  width: 36px;
+  height: 36px;
+}
+.packCard2 {
+  height: 435px;
+  width: 384px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 37px;
+}
+.packCard2-1 {
+  width: 336px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.packCard2-1Border {
+  width: 336px;
+  height: 78px;
+}
+.fiveHundredDollar {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+}
+.essentials {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: rgba(145, 145, 145, 1);
+  margin-top: 10px;
+}
+.packCard2-1Border1 {
+  width: 336px;
+  height: 180px;
+}
+.packCard2-1 h4 {
+  font-size: 18px;
+  color: #121316;
+  font-weight: 500;
+  padding-left: 40px;
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+}
+.includes {
+  display: flex;
+  row-gap: 15px;
+  font-size: 14px;
+  color: #3f4145;
+  font-weight: 500;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+.includesLi {
+  list-style-type: none;
+  column-gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.checkIcon {
+  width: 20px;
+  height: 20px;
+}
+.packCard2-2 {
+  width: 336px;
+  height: 48px;
+  background-color: rgba(164, 209, 226, 1);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.packageCard:hover {
+  box-shadow:
+    -8px -8px 0px 0px rgba(46, 65, 71, 0.4),
+    8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+}
+.packageCard:hover .packCard2-2 {
+  color: white;
+  background-color: black;
+}
+.footer {
+  width: 1440px;
+  height: 204px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.footerBorder {
+  width: 1200px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.Fb-border {
+  width: 358px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Montserrat", serif;
+  color: rgba(105, 114, 181, 1);
+}
+.fbBorder {
+  background-color: white;
+  border-radius: 40px;
+  width: 167px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.instagramBorder {
+  background-color: white;
+  border-radius: 40px;
+  width: 171px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.facebookLogo {
+  width: 20px;
+  height: 20px;
+}
+.instagramLogo {
+  width: 20px;
+  height: 20px;
 }
